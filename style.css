@@ -1,0 +1,156 @@
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /*&.darkmodeversion{
+    
+  }*/
+}
+.splash{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background:black;
+  z-index:200;
+  color:white;
+  text-align:center;
+  line-height:90vh;
+}
+.submitbtn.display-none{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.inputnamefield.display-none{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.splash.display-none{
+  position:fixed;
+  opacity:0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background:black;
+  z-index: index -10;;
+  color:white;
+  text-align:center;
+  line-height:90vh;
+  transition:all 0.5s;
+}
+@keyframes fadeIn{
+  to{
+    opacity:1;
+
+  }
+}
+.fade-in{
+  opacity:1;
+  animation:fadeIn 1s ease-in forwards
+}
+
+.members-count,
+.members-list,
+.messages {
+  border: 1px solid #e4e4e4;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.messages {
+  flex-shrink: 1;
+  overflow: auto;
+}
+
+.message {
+  padding: 5px 0;
+}
+.message .member {
+  display: inline-block;
+}
+
+.member {
+  padding-right: 10px;
+  position: relative;
+}
+
+
+.message-form {
+  display: flex;
+  flex-shrink: 0;
+}
+.message-form__input {
+  flex-grow: 1;
+  border: 1px solid #dfdfdf;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.message-form__button {
+  margin: 10px;
+  background-color: rgb(230, 151, 24);
+  border-radius: 20px;
+  width:80px;
+  height:30px;
+  
+}
+.submitbtn{
+  margin: 10px;
+  border-radius: 50px;
+  background-color: rgb(53, 180, 59);
+  width:100px;
+  height:40px;
+  box-shadow: 0 4px 5px 0 rgba(32, 89, 97, 0.596), 0 6px 5px 0 rgba(0,0,0,0.19);
+}
+.inputnamefield{
+  flex-grow: 0.1;
+  border: 1px solid #4e5ea5;
+  padding: 10px 15px;
+  font-size: 12px;
+  background-color: #bdddc1;
+}
+.submitbtn:hover{
+  width:110px;
+  height:44px;
+
+}
+.settings{
+  width:100px;
+}
+.settingsbutton{
+  display:flex;
+  transform:translate(+0%,-0%)
+}
+
+.collapsesettings{
+  transform:translate(+100%,-100%);
+  height:20px;
+  width:100px;
+  
+}
+.darkmode{
+  margin-top:30px;
+  height:30px;
+  width: 150px;
+  background-color: black;
+  color:beige;
+}
+.settingsbutton:disable{
+  cursor:not-allowed;
+}
+.timestamp{
+  font-size: 10px;
+  color:rgb(144, 140, 132);
+}
+.notifclass{
+  width:200px;
+}
